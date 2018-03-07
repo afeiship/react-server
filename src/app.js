@@ -1,9 +1,7 @@
-import Koa             from 'koa';
+import Koa from 'koa';
 import setupViewEngine from 'koa-react-view';
 
 const app = new Koa();
-
-console.log('app start!');
 
 setupViewEngine(app, {
   views: `${__dirname}/views`,
@@ -11,6 +9,8 @@ setupViewEngine(app, {
 });
 
 app.use(async ctx => {
+  let url = ctx.request.url;
+  console.log(url);
   ctx.state = {
     title: 'Awesome app',
     viewEngine: 'React'
@@ -18,4 +18,6 @@ app.use(async ctx => {
   await ctx.render('home');
 });
 
-app.listen(3000);
+app.listen(3000, () => {
+  console.log(`Server start at: http://localhost:3000`);
+});

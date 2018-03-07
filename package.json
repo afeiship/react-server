@@ -8,9 +8,9 @@
     "email": "1290657123@qq.com"
   },
   "scripts": {
-    "start": "node index.js"
+    "start": "nodemon ./src/boot.js"
   },
-  "main": "index.js",
+  "main": "./src/boot.js",
   "license": "MIT",
   "dependencies": {
     "koa": "^2.5.0",
@@ -35,6 +35,7 @@
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.16.0",
     "babel-preset-stage-0": "^6.24.1",
-    "babel-register": "^6.0.0"
+    "babel-register": "^6.0.0",
+    "nodemon": "^1.17.1"
   }
 }

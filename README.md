@@ -4,3 +4,6 @@
 
 ## resources:
 + https://chenshenhai.github.io/koa2-note/note/route/simple.html
++ http://knockoutjs.com/
++ http://handlebarsjs.com/
++ http://www.embeddedjs.com/

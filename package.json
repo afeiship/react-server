@@ -13,6 +13,7 @@
   "main": "./src/boot.js",
   "license": "MIT",
   "dependencies": {
+    "ejs": "^2.5.8",
     "koa": "^2.5.0",
     "koa-react-view": "^3.0.0",
     "react": "^15.4.0",
